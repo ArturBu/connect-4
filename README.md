@@ -17,16 +17,16 @@ Only authenticated users can play the game. There are two users already added (l
  
  Example of gameplay:
  
- 1. Start the game:
+1. Start the game:
  
  Execute GET on (where "connect-4" u may need to use artifact name - "connect-4-0.0.1-SNAPSHOT"):
  http://localhost:8080/connect-4/game/start?playerOneName=Johny&playerTwoName=Bill 
  Headers: 
  - Authorization: Basic Sm9hbzpwYXNzd29yZA==
  
- 2. In the answer you will receive:
- - {"message":"Waiting for player: Jhony to move.","gameStateEnum":"STARTED"}
- - x-auth-token: 5c04de32-3e83-4d5e-a9ac-5b3850e02780
+2. In the answer you will receive:
+  - {"message":"Waiting for player: Jhony to move.","gameStateEnum":"STARTED"}
+  - x-auth-token: 5c04de32-3e83-4d5e-a9ac-5b3850e02780
  
 After you received x-auth-token you should use it in HEADER instead of "Authorization: Basic Sm9hbzpwYXNzd29yZA=="
 
